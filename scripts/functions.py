@@ -1,6 +1,7 @@
 import pandas as pd
 
 def splits_industry(df):
+    """Cleans industry column"""
     industries = []
     for industry in df["Industry"]:
         if industry != None and type(industry) == str:
@@ -60,12 +61,28 @@ def sort_proportion_df(df, top):
 
     
 
-def grouping_by_state(df, state = "us", top = 10):
-    if state == "us":
+def grouping_by_state(df, state = "0", top = 10):
+    if state == "0":
         return sort_proportion_df(df, top)
         
     else:
         filtered_df = df[df["State"] == state]
+        return sort_proportion_df(filtered_df, top)
+    
+def grouping_by_industry(df, industry = "0", top = 10):
+    if industry == "0":
+        return sort_proportion_df(df, top)
+        
+    else:
+        filtered_df = df[df['Industry'].str.contains(industry, na=False)]
+        return sort_proportion_df(filtered_df, top)
+    
+def grouping_by_company(df, company = "0", top = 10):
+    if company == "0":
+        return sort_proportion_df(df, top)
+        
+    else:
+        filtered_df = df[df['Employer'].str.contains(company, na=False)]
         return sort_proportion_df(filtered_df, top)
 
     
