@@ -37,7 +37,7 @@ def clean_data(df):
     df = splits_industry(df)
     
     #creating new columns
-    quali_columns = ["Employer", "Industry", "City", "State"]
+    quali_columns = ["Employer", "Industry", "City", "State", "Zip Code"]
     quanti_columns = ['Initial Approval',
                     'Initial Denial']
 
@@ -50,6 +50,9 @@ def clean_data(df):
 
     df["Employer"] = df["Employer"].str.title()
     df["City"] = df["City"].str.title()
+    
+    df["Zip Code"] = df["Zip Code"].fillna(00000).astype(int)
+    df["Zip Code"] = df["Zip Code"].astype("Int64")
     
     return df
 
