@@ -1,4 +1,4 @@
 # H1B-Analysis
-This is a small project I'm working at to improve the skills of coding and data analysis I'm getting at the MS in Computational Analysis and Public Policy of the University of Chicago.
+This is a project I'm working at to improve the skills of coding and data analysis I'm getting at the MS in Computational Analysis and Public Policy of the University of Chicago.
 
-The main goal is to quickly filter the top companies that sponsor H1-B in each state or through the US.
+The main goal is to find the companies that sponsored the most international employees in the US or in a required State.
