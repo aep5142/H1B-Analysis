@@ -24,6 +24,12 @@ uv sync
 uv run python -m scripts
 ```
 
+5. Using the application
+
+```bash
+Use the filters for State, Industry and Company Name
+```
+
 ## Data Sources :computer:
 
 ### Data Source #1: [US Citizenship and Inmigration Services](https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub)
@@ -32,7 +38,7 @@ Database posted by this federal agency for 2024 granted visas.
 
 ## Final Thoughts
 
-This is my first project working by myself in something that motivated me. I know there are many things to be improved, specially with data visualization. Since I've decided to only use AI assistants to yes/no questions and not to code critical parts of my projects, is that I'm planning to take a course of data visualization in the upcoming fall 2025 to improve this aspect of this project.
+This is the first project working by myself in something that motivates me. I know there are many things to be improved, specially with data visualization. Since I've decided to only use AI assistants to yes/no questions and not to code critical parts of my projects, is that I'm planning to take a course of data visualization in the upcoming fall 2025 to improve this aspect of this project.
 
 It was exciting to finally start creating my own projects and see how the skills I'm learning can be used to make people's lifes easier in some aspects.
 
