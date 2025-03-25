@@ -27,7 +27,10 @@ def main():
         industry_df = grouping_by_industry(state_df, industry, 100000)
         company_df = grouping_by_company(industry_df, company_name, number)
 
-        print(company_df)
+        if len(company_df) == 0:
+            print("Oops! We couldn't find anything with your parameters")
+        else:
+            print(company_df)
             
         leaving = input("Do you want to make another search? (Y/N): ")
         if leaving.upper() == "N":
