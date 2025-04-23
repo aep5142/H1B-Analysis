@@ -36,8 +36,9 @@ try:
             ---  
             ### ℹ️ How to read this table:
 
-            - **Approval Rate**: Ratio of approved requests to requests of the employer
-            - **Requests/Total**: Ratio of requests of the employer compared to total requests according to the specified filters
+            - **Approval Rate**: Percentage of approved requests of the employer (approved/requests)
+            - **Requests/Total**: Percentage of requests of the employer compared to total requests according to the
+                     specified filters of State, Industry, and Company Name
                     
             ---
             ###### Original Database:
