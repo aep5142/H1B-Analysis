@@ -9,7 +9,7 @@ st.set_page_config(page_title="H1-B Dashboard", layout="wide")
 DF = clean_data(raw_df)
 
 # Streamlit UI
-st.title("🔍 H1-B Top Employers Explorer 2024")
+st.title("🔍 H1-B Top Employers Explorer (Fiscal Year 2024)")
 
 st.sidebar.header("Apply Filters")
 
@@ -34,9 +34,15 @@ try:
         st.dataframe(final_df, use_container_width=True)
         st.markdown("""
             ---  
-            ### ℹ️ What Each Column Means:
+            ### ℹ️ How to read this table:
 
-            - **Requests/Total**: Ratio of requests of the employer compared to total requests according to the specified filters""")
+            - **Approval Rate**: Ratio of approved requests to requests of the employer
+            - **Requests/Total**: Ratio of requests of the employer compared to total requests according to the specified filters
+                    
+            ---
+            ###### Original Database:
+            - US Citizenship and Inmigration Services (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub)""")
+        
 
 except Exception as e:
     st.error(f"An error occurred during filtering: {e}")
