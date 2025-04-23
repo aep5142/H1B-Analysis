@@ -44,7 +44,7 @@ def clean_data(df):
     useful_columns = quali_columns + quanti_columns
     df = pd.DataFrame(df[useful_columns])
     df["total_requests"] = df[quanti_columns].sum(axis=1)
-    df["approval_rate"] = df["Initial Approval"]/df["total_requests"]
+    df["approval_rate (%)"] = round(df["Initial Approval"]/df["total_requests"] * 100,1)
     df = df[df['total_requests'] > 0]
     df = df.drop(columns = quanti_columns, axis=1)
 
