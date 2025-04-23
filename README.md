@@ -21,10 +21,10 @@ uv sync
 4. Run the application
 
 ```bash
-uv run python -m scripts
+streamlit run h1b_dashboard.py
 ```
 
-5. Using the application
+5. Using the application on the navigator
 
 ```bash
 Use the filters for State, Industry and Company Name
