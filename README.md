@@ -6,6 +6,10 @@ To make life easier to international students, I developed a seamless tool to fi
 
 ## How to run run this project? :arrow_forward:
 
+1. Go to https://top-h1b-employers.streamlit.app/
+
+But if you want to run it locally, do:
+
 1. [Install UV to Local Machine](https://docs.astral.sh/uv/getting-started/installation/)
 
 2. Clone the Project
