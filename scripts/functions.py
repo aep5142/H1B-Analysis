@@ -64,24 +64,24 @@ def sort_proportion_df(df, top):
 
     
 
-def grouping_by_state(df, state = "0", top = 10):
-    if state == "0":
+def grouping_by_state(df, state = "", top = 10):
+    if state == "":
         return sort_proportion_df(df, top)
         
     else:
         filtered_df = df[df["State"] == state]
         return sort_proportion_df(filtered_df, top)
     
-def grouping_by_industry(df, industry = "0", top = 10):
-    if industry == "0":
+def grouping_by_industry(df, industry = "", top = 10):
+    if industry == "":
         return sort_proportion_df(df, top)
         
     else:
         filtered_df = df[df['Industry'].str.contains(industry, na=False)]
         return sort_proportion_df(filtered_df, top)
     
-def grouping_by_company(df, company = "0", top = 10):
-    if company == "0":
+def grouping_by_company(df, company = "", top = 10):
+    if company == "":
         return sort_proportion_df(df, top)
         
     else:
