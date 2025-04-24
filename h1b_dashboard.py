@@ -42,7 +42,13 @@ try:
                     
             ---
             ###### Original Database:
-            - US Citizenship and Inmigration Services (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub)""")
+            - US Citizenship and Inmigration Services (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub)
+                    
+            
+            ---
+            
+            ###### *Created By: Agustín Eyzaguirre, MSCAPP Student at U.Chicago*
+            """)
         
 
 except Exception as e:
