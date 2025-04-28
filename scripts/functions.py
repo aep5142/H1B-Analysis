@@ -77,7 +77,7 @@ def grouping_by_industry(df, industry = "", top = 10):
         return sort_proportion_df(df, top)
         
     else:
-        filtered_df = df[df['Industry'].str.contains(industry, na=False)]
+        filtered_df = df[df['Industry'].str.lower().str.contains(industry, na=False)]
         return sort_proportion_df(filtered_df, top)
     
 def grouping_by_company(df, company = "", top = 10):
@@ -85,7 +85,7 @@ def grouping_by_company(df, company = "", top = 10):
         return sort_proportion_df(df, top)
         
     else:
-        filtered_df = df[df['Employer'].str.contains(company, na=False)]
+        filtered_df = df[df['Employer'].str.lower().str.contains(company, na=False)]
         return sort_proportion_df(filtered_df, top)
 
     

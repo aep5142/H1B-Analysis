@@ -15,8 +15,8 @@ st.sidebar.header("Apply Filters")
 
 # Filters
 state = st.sidebar.text_input("State abbreviation (e.g., CA, NY):", "").upper()
-industry = st.sidebar.text_input("Industry keyword:", "").capitalize()
-company_name = st.sidebar.text_input("Company name keyword:", "").capitalize()
+industry = st.sidebar.text_input("Industry keyword:", "").lower()
+company_name = st.sidebar.text_input("Company name keyword:", "").lower()
 number = st.sidebar.number_input("Number of records to display:", min_value=1, max_value=1000, value=50, step=1)
 
 # Data filtering pipeline
