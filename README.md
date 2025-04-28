@@ -1,6 +1,6 @@
 # H1-B Sponsors Search:
 
-Being an international student is hard. Besides having to study in a foreing language, most of us need to create a new network to find a job or intership, while there are many companies that don't sponsor international people.
+Being an international student is hard. Besides having to study in a foreing language, most of us need to create a new network to find a job or intership, while there are many companies that don't post their vacants in job boards nor sponsor international people.
 
 To make life easier to international students, I developed a seamless tool to find the companies that sponsor H1-B visas for international students. You can search by State, Industry and company name.
 
